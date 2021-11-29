@@ -1,54 +1,29 @@
-import React, { useState } from 'react';
-import Project from "../Project";
+import React from 'react'; 
+import ProjectCards from '../../components/Project'
+import portfolio from '../../portfolio.json'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Portfolio() {
+function Wrapper(props) {
+    return <div className="wrapper">{props.children}</div>;
+}
 
-  // Replace links with deployed projects and GitHub repos
-  const [projects] = useState([
-    {
-      name: 'surf-report',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'pastel-puzzels',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'run-buddy',
-      description: 'HTML/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'led-wall',
-      description: 'Node/IoT',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'calculator',
-      description: 'React/JavaScript/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-  ]);
+function Portfolio () {  
 
-  return (
-    <div>
-      <div className="flex-row">
-        {projects.map((project, idx) => (
-          <Project
-            project={project}
-            key={"project" + idx}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
+    return (
+        <section className="container">
+          <div className="project">
+            <h2 className="top-title">Portfolio</h2>
+            <hr></hr>
+          </div>
+
+          <Wrapper id="card-data">
+            {portfolio.map((project) => (
+              <ProjectCards key={project.id} image={project.image} name={project.name} github={project.github} deploy={project.deploy}/>
+            ))}
+          </Wrapper>
+        </section>
+    
+    );
+  }
 
 export default Portfolio;

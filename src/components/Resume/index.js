@@ -1,35 +1,29 @@
-import React from 'react';
+import React from "react";
 
 function Resume() {
   return (
-    <section className="my-5">
-      <div className="my-2">
-      <p>
-        Download my <a href="https://www.linkedin.com/">resume</a>
-        </p>
-        <h3>Front-end Proficiencies</h3>
-        <ul className="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>responsive design</li>
-          <li>React</li>
-          <li>Bootstrap</li>
-        </ul>
-        <h3>Back-end Proficiencies</h3>
-        <ul className="skills">
-          <li>APIs</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>MySQL, Sequelize</li>
-          <li>MongoDB, Mongoose</li>
-          <li>REST</li>
-          <li>GraphQL</li>
-        </ul>
+    <section class="container">
+      <h2 className="top-title">Resume</h2>
+      <hr></hr>
+
+      <div>
+          <p class="mt-5">
+            <a href="https://www.linkedin.com/in/nathan-skidmore-7458056a/">
+              <img
+                src="https://img.icons8.com/fluent/48/000000/linkedin.png"
+                alt="inkedIn"
+              />
+            </a>
+          </p>
+
+          <a
+            href="./assets/NateSkidmoreResume.pdf"
+            class="link"
+          >
+            Download Resume
+          </a>
       </div>
-    </section>
-  );
-}
+      </section>
+  )}
 
 export default Resume;

@@ -1,29 +1,41 @@
-import './Nav.css';
+import React from "react";
+import { Navbar } from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
-function Nav() {
-return (
-  <div>
-    <header id="header"></header>
-    <nav>
-      <ul>
-        <li><a href="#About">About Me</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="./assets/NateSkidmoreResume.pdf">Resume</a></li>
-
-      </ul>
-    </nav>
-
+function Nav(props) {
+  return (
     <div>
-      <h1><a href="index.html"> Nate Skidmore</a></h1>
-      <div>
-        <a href="https://github.com/nskidmore7" target="blank"></a>
-        <a href="https://www.linkedin.com/in/nathan-skidmore-7458056a/" target="blank"></a>
-      </div>
+      <Navbar expand="lg" bg="dark" sticky="top">
+        <NavLink className="nav-link" to="/">
+          <div class="text-light">
+            <h4 class="nav-title-font">Michael Giddings</h4>
+          </div>
+        </NavLink>
+        <ul class="navbar-nav ml-auto navitem-indent">
+          <li class="nav-item">
+            <NavLink to="/about">
+              <div class="nav-font text-light">About Me</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/portfolio">
+              <div class="nav-font text-light">Portfolio</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/contact">
+              <div class="nav-font text-light">Contact</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/resume">
+              <div class="nav-font text-light">Resume</div>
+            </NavLink>
+          </li>
+        </ul>
+      </Navbar>
     </div>
-  </div>
-
-    
-)
-};
+  );
+}
 
 export default Nav;
