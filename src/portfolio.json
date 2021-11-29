@@ -4,20 +4,20 @@
         "name": "MTG Alpha Collection Manager",
         "image": "./assets/Images/MTG.png",
         "github": "https://github.com/Nickm615/MtG-Alpha-Collection-Manager",
-        "deploy": "https://mtg-alpha-collection-manager.herokuapp.com/"
+        "link": "https://mtg-alpha-collection-manager.herokuapp.com/"
     },
     {
         "id": 2,
         "name": "Foodie",
         "image": "./assets/Images/Foodie.png",
         "github": "https://github.com/kpehl/week-in-view",
-        "deploy": "https://nskidmore7.github.io/GroupProject1/"
+        "link": "https://nskidmore7.github.io/GroupProject1/"
     },
     {
         "id": 3,
         "name": "Random Password Generator",
         "image": "./assets/Images/Password.png",
         "github": "https://github.com/nskidmore7/Password_Generator",
-        "deploy": "https://nskidmore7.github.io/Password_Generator/"
+        "link": "https://nskidmore7.github.io/Password_Generator/"
     }
 ]
