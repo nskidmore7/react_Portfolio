@@ -11,7 +11,7 @@ function Resume() {
             <a href="https://www.linkedin.com/in/nathan-skidmore-7458056a/">
               <img
                 src="https://img.icons8.com/fluent/48/000000/linkedin.png"
-                alt="inkedIn"
+                alt="linkedIn"
               />
             </a>
           </p>
