@@ -1,4 +1,6 @@
 import React from "react";
+import LinkedIn from "../../assets/Images/linkedin.png";
+import NateResume from "../../assets/NateSkidmoreResume.pdf"
 
 function Resume() {
   return (
@@ -10,14 +12,14 @@ function Resume() {
           <p class="mt-5">
             <a href="https://www.linkedin.com/in/nathan-skidmore-7458056a/">
               <img
-                src="https://img.icons8.com/fluent/48/000000/linkedin.png"
+                src={LinkedIn}
                 alt="linkedIn"
               />
             </a>
           </p>
 
           <a
-            href="./assets/NateSkidmoreResume.pdf"
+            href={NateResume}
             class="link"
           >
             Download Resume

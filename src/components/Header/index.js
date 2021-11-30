@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Redirect, Router } from "react-router-dom";
+import { Route, Redirect, HashRouter } from "react-router-dom";
 import Nav from "../../components/Nav";
 import About from "../../components/About";
 import Portfolio from "../../components/Portfolio";
@@ -10,7 +10,7 @@ import Resume from '../../components/Resume';
 class Header extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <header>
           <Nav />
         </header>
@@ -22,7 +22,7 @@ class Header extends Component {
           <Route path="/contact" component={Contact}/>
           <Route path="/resume" component={Resume}/>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }

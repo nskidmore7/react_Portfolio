@@ -1,4 +1,5 @@
 import React from 'react';
+import headshot from "../../assets/Images/Headshot.jpg";
 
 function About() {
   return(
@@ -6,7 +7,7 @@ function About() {
         <h2 class="top-title">Nate Skidmore</h2>
         <hr></hr>
         <div>
-            <img class="mb-5" id="avatar" src="/assets/Images/Headshot.jpg" alt="Nate Skidmore" />
+            <img class="mb-5" id="avatar" src={headshot} alt="Nate Skidmore" />
         <p>
           Full Stack Computer Programming Student
         </p>

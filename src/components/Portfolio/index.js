@@ -2,6 +2,9 @@ import React from 'react';
 import ProjectCards from '../../components/Project'
 import portfolio from '../../portfolio.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Foodie from "../../assets/Images/Foodie.png"
+import MTG from "../../assets/Images/MTG.png"
+import Password from "../../assets/Images/Password.png"
 
 function Wrapper(props) {
     return <div className="wrapper">{props.children}</div>;
